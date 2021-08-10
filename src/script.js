@@ -78,9 +78,9 @@ celsiusLink.addEventListener("click", convertToCelsius);
 // when a user searches for a city (example: New York),
 // it should display the name of the city on the result page and the current temperature of the city.
 
-function showRealForecast(response) {
-  console.log(response.data);
-}
+//function showRealForecast(response) {
+//  console.log(response.data);
+//}
 
 function showRealWeather(response) {
   console.log(response);
@@ -95,6 +95,7 @@ function showRealWeather(response) {
   let realLowTemp = Math.round(response.data.main.temp_min);
   let realWeatherDescription = response.data.weather[0].description;
   let realHumidity = response.data.main.humidity;
+  let iconCode = response.data.weather[0].icon;
 
   let temperatureElement = document.querySelector("#current-temp-display");
   temperatureElement.innerHTML = `${realTemperature}`;
@@ -110,6 +111,11 @@ function showRealWeather(response) {
   weatherDescriptionElement.innerHTML = realWeatherDescription;
   let humidityElement = document.querySelector("#humidity");
   humidityElement.innerHTML = `${realHumidity}%`;
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${iconCode}@2x.png`
+  );
 
   units = "imperial";
   apiKey = "0ec90f7c009a99f423602e64344f4416";

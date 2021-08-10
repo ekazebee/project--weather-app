@@ -73,21 +73,22 @@
               </h4>
             </div>
             <div class="col current-temp">
+              <div class="clearfix">
               <h1>
-                <span id="current-temp-display">72</span>
-                <span class="temp-units">
+                <span id="current-temp-display" class="float-left">72</span>
+                
+                <span class="temp-units float-left">
                   <a href="#" id="fahrenheit"> <strong>°F</strong></a> | <a href="#" id="celsius" >°C</a> </span>
                 </span>
               </h1>
+              </div>
               <div>
                 <p> <span id="current-high-temp">H: 75</span> / <span id="current-low-temp">L: 59</span> </p>
               </div>
             </div>
 
             <div class="col current-icon">
-              <img
-                src="https://img.icons8.com/plasticine/100/000000/partly-cloudy-day--v1.png"
-              />
+              <img id="icon" src="http://openweathermap.org/img/wn/02d@2x.png" alt="">
 
               <hr class="current" />
               <p class="current" id="weather-description">partly cloudy</p>
