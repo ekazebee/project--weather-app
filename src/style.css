@@ -8,20 +8,23 @@ a {
 }
 
 h1 {
-  text-align: center;
-  font-size: 70px;
+  text-align: left;
+  font-size: 48px;
   margin-top: 20px;
   color: #8eb4da;
-  font-style: italic;
+  color: #202124;
 }
 
 h2 {
   margin-top: 20px;
-  color: #7a9dc0;
-  color: #8eb4da;
+  font-size: 22px;
+  color: #202124;
 }
 h4 {
-  font-size: 15px;
+  font-size: 16px;
+  font-weight: 80px;
+  line-height: 19px;
+  color: #70757a;
 }
 
 p {
@@ -45,11 +48,29 @@ hr.current {
   margin-top: 10px;
 }
 
+p.current-temp-range {
+  text-align: left;
+  margin-left: 2px;
+  font-size: 14px;
+}
+
+.current-high-temp {
+  color: #202124;
+}
+
+.current-low-temp {
+  color: #70757a;
+}
+
 .card {
   margin: 30px;
-  padding: 30px;
-  max-width: 60%;
+  padding: 15px;
+  max-width: 600px;
   padding-bottom: 15px;
+}
+
+.current-description {
+  padding: 0;
 }
 
 .current-specs {
@@ -91,8 +112,9 @@ p.current {
 }
 
 .temp-units {
-  font-size: 20px;
-  margin-top: 0;
+  font-size: 16px;
+  position: relative;
+  top: -26px;
 }
 
 .low-temp {
