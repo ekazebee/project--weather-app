@@ -30,12 +30,12 @@ h4 {
 p {
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
 }
 
 img {
   display: block;
   margin: 0 auto;
-  max-block-size: 50%;
 }
 
 hr {
@@ -99,7 +99,8 @@ p.current-temp-range {
 }
 
 img.upcoming-forecast {
-  max-block-size: 40%;
+  max-block-size: 30%;
+  margin: 0 auto;
 }
 
 p.current {
@@ -115,6 +116,10 @@ p.current {
   font-size: 16px;
   position: relative;
   top: -26px;
+}
+
+.upcoming-forecast {
+  padding: 0;
 }
 
 .low-temp {
