@@ -10,7 +10,9 @@ a {
 h1 {
   text-align: left;
   font-size: 48px;
+  font-weight: normal;
   margin-top: 20px;
+  margin-bottom: 0;
   color: #8eb4da;
   color: #202124;
 }
@@ -66,26 +68,28 @@ p.current-temp-range {
   margin: 30px;
   padding: 15px;
   max-width: 600px;
-  padding-bottom: 15px;
 }
 
 .current-description {
   padding: 0;
 }
 
-.current-specs {
+.current-temp {
   margin-left: 30px;
   padding-left: 20px;
   margin-top: 20px;
-  border-left: 3px solid #8eb4da;
-}
-
-.current-temp {
-  margin-top: 30px;
+  border-left: 2px solid #8eb4da79;
 }
 
 .current-icon {
   margin-top: 20px;
+  padding: 0;
+  margin-left: 20px;
+}
+
+.current-specs {
+  position: relative;
+  top: 40px;
 }
 
 .search-btn {
