@@ -48,7 +48,9 @@ hr {
   color: #8eb4da;
 }
 hr.current {
-  max-width: 15%;
+  max-width: 20%;
+  color: #8eb4da79;
+  height: 3px;
   margin: 0 auto 10px;
 }
 
@@ -69,7 +71,7 @@ p.current-temp-range {
 .card {
   margin: 30px;
   padding: 15px;
-  max-width: 600px;
+  max-width: 650px;
 }
 
 .current-description {
@@ -126,6 +128,7 @@ p.current {
 
 .upcoming-forecast {
   padding: 0;
+  max-height: fit-content;
 }
 
 .low-temp {
