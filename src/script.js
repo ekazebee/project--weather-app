@@ -45,6 +45,8 @@ function showRealWeather(response) {
 
   let temperatureElement = document.querySelector("#current-temp-display");
   temperatureElement.innerHTML = `${fahrenheitTemperature}`;
+  fahrenheitLink.classList.add("active");
+  celsiusLink.classList.remove("active");
   let windElement = document.querySelector("#wind-speed");
   windElement.innerHTML = `${realWind} mph`;
   let highTempElement = document.querySelector("#current-high-temp");
@@ -71,25 +73,18 @@ function showRealWeather(response) {
 function convertToCelsius(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#current-temp-display");
+  fahrenheitLink.classList.remove("active");
+  celsiusLink.classList.add("active");
   let celsiusTemperature = Math.round(((fahrenheitTemperature - 32) * 5) / 9);
   temperatureElement.innerHTML = celsiusTemperature;
-  convertToCelsius.called = true; // since inital value is in F; can run this function right away
-  celsiusLink.innerHTML = "<strong>°C</strong>";
-  fahrenheitLink.innerHTML = "°F";
 }
 
 function convertToFahrenheit(event) {
   event.preventDefault();
-  if (convertToCelsius.called) {
-    // can only run if temp has been converted to C
-    let currentTempDisplay = document.querySelector("#current-temp-display"); // give C display temp instead of using display on load below
-    let temperature = currentTempDisplay.innerHTML;
-    temperature = Number(temperature);
-    currentTempDisplay.innerHTML = Math.round((temperature * 9) / 5 + 32);
-    fahrenheitLink.innerHTML = "<strong>°F</strong>";
-    celsiusLink.innerHTML = "°C";
-  }
-  convertToCelsius.called = false; // will return false next time so it can't run again
+  let temperatureElement = document.querySelector("#current-temp-display");
+  fahrenheitLink.classList.add("active");
+  celsiusLink.classList.remove("active");
+  temperatureElement.innerHTML = fahrenheitTemperature;
 }
 
 function search(event) {
@@ -109,7 +104,7 @@ function search(event) {
 let citySearchForm = document.querySelector("#city-search-form");
 citySearchForm.addEventListener("submit", search);
 
-let fahrenheitTemperature = null;
+let fahrenheitTemperature = 72;
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 let celsiusLink = document.querySelector("#celsius-link");

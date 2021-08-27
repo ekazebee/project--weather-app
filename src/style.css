@@ -147,3 +147,12 @@ p.current {
   text-transform: none;
   text-align: left;
 }
+
+.temp-units .active {
+  font-weight: bolder;
+}
+
+.temp-units .active:hover {
+  cursor: default;
+  color: #7a9dc0;
+}
