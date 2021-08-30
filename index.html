@@ -28,67 +28,77 @@
   </head>
 
   <body>
-    
     <div class="container">
       <div class="weather-app-wrapper">
-      <div class="card">
-        <div class="card-body">
-          <div class="row justify-content-between"></div>
+        <div class="card">
+          <div class="card-body">
+            <div class="row justify-content-between"></div>
             <div class="row">
-            
               <div class="col-sm-auto">
                 <form id="city-search-form" class="row g-2">
                   <div class="col-auto">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="city-search-input"
-                    placeholder="City"
-                  /> </div>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="city-search-input"
+                      placeholder="City"
+                    />
+                  </div>
                   <div class="col-auto">
-                  <input
-                    type="submit"
-                    class="form-control search-submit"
-                    value="search"
-                    id="city-search-submit"
-                  /> </div>
+                    <input
+                      type="submit"
+                      class="form-control search-submit"
+                      value="search"
+                      id="city-search-submit"
+                    />
+                  </div>
                 </form>
 
                 <div class="col-md-auto-3">
-                  <a class="find-current-location"id="find-current-location" href="#"> <i class="fas fa-search-location"> </i
-                  > use current location</a>
-                </div>               
+                  <a
+                    class="find-current-location"
+                    id="find-current-location"
+                    href="#"
+                  >
+                    <i class="fas fa-search-location"> </i> use current
+                    location</a
+                  >
+                </div>
               </div>
             </div>
           </div>
 
           <div class="row main-display">
             <div class="col-6 current-description">
-              
               <h2 id="current-city">Dana Point, CA</h2>
-              <h4 id="current-time">
-                Tuesday 9:56 </h4>
+              <h4 id="current-time">Tuesday 9:56</h4>
 
               <div class="col current-temp">
-              <div class="clearfix">
-              <h1>
-                <span id="current-temp-display" class="float-left">72</span>
-                
-                <span class="temp-units">
-                  <a href="#" id="fahrenheit-link" class="active">°F</a> | <a href="#" id="celsius-link" >°C</a> </span>
-                </span>
-              </h1>
-              </div>
-              <div>
-                <p class="current-temp-range">H: <span id="current-high-temp">75</span> / L: <span id="current-low-temp">59</span> </p>
-              </div>
-            </div>
-  
-            </div>
+                <div class="clearfix">
+                  <h1>
+                    <span id="current-temp-display" class="float-left">72</span>
 
+                    <span class="temp-units">
+                      <a href="#" id="fahrenheit-link" class="active">°F</a> |
+                      <a href="#" id="celsius-link">°C</a>
+                    </span>
+                  </h1>
+                </div>
+                <div>
+                  <p class="current-temp-range">
+                    H: <span id="current-high-temp">75</span> / L:
+                    <span id="current-low-temp">59</span>
+                  </p>
+                </div>
+              </div>
+            </div>
 
             <div class="col current-icon">
-              <img id="icon" src="http://openweathermap.org/img/wn/02d@2x.png" alt="">
+              <img
+                id="icon"
+                src="http://openweathermap.org/img/wn/02d@2x.png"
+                alt=""
+              />
 
               <hr class="current" />
               <p class="current" id="weather-description">partly cloudy</p>
@@ -96,62 +106,73 @@
 
             <div class="col current-specs">
               <h4>
-                  <small>Humidity: <span id="humidity">54%</span>
-                     <br />Wind:  <span id="wind-speed">10mph</span></small>
+                <small
+                  >Humidity: <span id="humidity">54%</span> <br />Wind:
+                  <span id="wind-speed">10mph</span></small
+                >
               </h4>
             </div>
           </div>
 
           <hr />
-
-          <div class="row upcoming-forecast">
-            <div class="col upcoming-forecast">
-              <p>wed</p>
+          <div class="upcoming-forecast">
+            <div class="row">
+              <div class="col upcoming-forecast">
+                <p>wed</p>
                 <img
-                class="upcoming-forecast"
-                src="https://img.icons8.com/plasticine/100/000000/sun--v1.png"
+                  class="upcoming-forecast"
+                  src="https://img.icons8.com/plasticine/100/000000/sun--v1.png"
                 />
                 <p>73 / <span class="low-temp"> 57</span></p>
-             </div>
-            <div class="col upcoming-forecast">
-              <p>thu</p>
-              <img
-                class="upcoming-forecast"
-                src="https://img.icons8.com/plasticine/100/000000/rain.png"
-              />
-              <p>73 / <span class="low-temp"> 57</span></p>
-            </div>
-            <div class="col upcoming-forecast">
-              <p>fri</p>
-              <img
-                class="upcoming-forecast"
-                src="https://img.icons8.com/plasticine/100/000000/sun--v1.png"
-              />
-              <p>73 / <span class="low-temp"> 57</span></p>
-            </div>
-            <div class="col upcoming-forecast">
-              <p>sat</p>
-              <img
-                class="upcoming-forecast"
-                src="https://img.icons8.com/plasticine/100/000000/foggy-night-1.png"
-              />
-              <p>73 / <span class="low-temp"> 57</span></p>
-            </div>
-            <div class="col upcoming-forecast">
-              <p>sun</p>
-              <img
-                class="upcoming-forecast"
-                src="https://img.icons8.com/plasticine/100/000000/partly-cloudy-day--v1.png"
-              />
-              <p>73 / <span class="low-temp"> 57</span></p>
+              </div>
+              <div class="col upcoming-forecast">
+                <p>thu</p>
+                <img
+                  class="upcoming-forecast"
+                  src="https://img.icons8.com/plasticine/100/000000/rain.png"
+                />
+                <p>73 / <span class="low-temp"> 57</span></p>
+              </div>
+              <div class="col upcoming-forecast">
+                <p>fri</p>
+                <img
+                  class="upcoming-forecast"
+                  src="https://img.icons8.com/plasticine/100/000000/sun--v1.png"
+                />
+                <p>73 / <span class="low-temp"> 57</span></p>
+              </div>
+              <div class="col upcoming-forecast">
+                <p>sat</p>
+                <img
+                  class="upcoming-forecast"
+                  src="https://img.icons8.com/plasticine/100/000000/foggy-night-1.png"
+                />
+                <p>73 / <span class="low-temp"> 57</span></p>
+              </div>
+              <div class="col upcoming-forecast">
+                <p>sun</p>
+                <img
+                  class="upcoming-forecast"
+                  src="https://img.icons8.com/plasticine/100/000000/partly-cloudy-day--v1.png"
+                />
+                <p>73 / <span class="low-temp"> 57</span></p>
+              </div>
             </div>
           </div>
         </div>
+
+        <small>
+          <p class="github-link">
+            <a
+              href="https://github.com/ekazebee/project--weather-app"
+              target="blank"
+              >Open-source code</a
+            >
+            by Emily Kazebee
+          </p></small
+        >
+        <script src="src/script.js"></script>
       </div>
     </div>
-    <small>
-    <p class="github-link"><a href="https://github.com/ekazebee/project--weather-app" target="blank">Open-source code</a> by Emily Kazebee</p></small>
-    </div>
-    <script src="src/script.js"></script>
   </body>
 </html>

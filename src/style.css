@@ -72,9 +72,9 @@ p.current-temp-range {
 .weather-app-wrapper {
 }
 .card {
+  max-width: 650px;
   margin: 30px;
   padding: 15px;
-  max-width: 650px;
 }
 
 .current-description {
@@ -146,6 +146,7 @@ p.current {
 .github-link {
   text-transform: none;
   text-align: left;
+  margin-top: 10px;
 }
 
 .temp-units .active {
