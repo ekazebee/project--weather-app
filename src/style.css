@@ -4,9 +4,11 @@ body {
 
 a {
   color: #202124;
-  color: #7a9dc0;
-
   text-decoration: none;
+}
+
+a.github-link {
+  color: #7a9dc0;
 }
 
 h1 {
@@ -163,7 +165,7 @@ p.current {
 
 .temp-units .active:hover {
   cursor: default;
-  color: #7a9dc0;
+  color: #202124;
 }
 
 .weather-forecast {
