@@ -11,7 +11,7 @@ a {
 
 h1 {
   text-align: left;
-  font-size: 48px;
+  font-size: 60px;
   font-weight: normal;
   margin-top: 20px;
   margin-bottom: 0;
@@ -62,13 +62,13 @@ hr.forecast-divider {
 p.current-temp-range {
   text-align: left;
   margin-left: 2px;
-  margin-top: 20px;
-  font-size: 14px;
-  color: #70757a;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #7a9dc0;
 }
 
-.current-high-temp {
-  font-weight: 500;
+.current-high-temp-H {
+  font-weight: 600;
 }
 
 .current-low-temp {
@@ -110,6 +110,14 @@ p.current-temp-range {
   margin-top: 40px;
 }
 
+.humidity {
+  color: #7a9dc0;
+}
+
+.wind-speed {
+  color: #7a9dc0;
+}
+
 .search-btn {
   display: inline-block;
 }
@@ -131,7 +139,7 @@ p.current {
 .temp-units {
   font-size: 16px;
   position: relative;
-  top: -26px;
+  top: -32px;
 }
 
 .low-temp {
