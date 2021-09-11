@@ -45,14 +45,19 @@ img {
 
 hr {
   display: block;
-  margin: 25px auto;
-  color: #8eb4da;
+  color: #8eb4da79;
 }
+
 hr.current {
   max-width: 20%;
   color: #8eb4da79;
   height: 3px;
   margin: 0 auto 10px;
+}
+
+hr.forecast-divider {
+  height: 3px;
+  margin: 15px;
 }
 
 p.current-temp-range {
@@ -85,7 +90,7 @@ p.current-temp-range {
   margin-left: 30px;
   padding-left: 20px;
   margin-top: 20px;
-  border-left: 2px solid #8eb4da79;
+  border-left: 3px solid #8eb4da49;
 }
 
 .current-icon {
@@ -105,8 +110,7 @@ p.current-temp-range {
 }
 
 .main-display {
-  margin: 15px;
-  margin-bottom: 0;
+  margin: 20px;
 }
 
 img.upcoming-forecast {
@@ -156,4 +160,20 @@ p.current {
 .temp-units .active:hover {
   cursor: default;
   color: #7a9dc0;
+}
+
+.weather-forecast {
+  text-align: center;
+}
+
+.weather-forecast-date {
+  text-transform: uppercase;
+  font-size: 16px;
+  opacity: 0.75;
+}
+.weather-forecast-temperatures {
+  font-size: 14px;
+}
+.weather-forecast-temperature-min {
+  opacity: 0.75;
 }
