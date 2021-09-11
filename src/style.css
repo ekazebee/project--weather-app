@@ -26,7 +26,6 @@ h2 {
 }
 h4 {
   font-size: 16px;
-  font-weight: 80px;
   line-height: 19px;
   color: #70757a;
 }
@@ -64,22 +63,26 @@ p.current-temp-range {
   text-align: left;
   margin-left: 2px;
   font-size: 14px;
+  color: #70757a;
 }
 
 .current-high-temp {
-  color: #202124;
+  font-weight: 500;
 }
 
 .current-low-temp {
-  color: #70757a;
+  font-weight: 400;
 }
 
 .weather-app-wrapper {
 }
+
 .card {
   max-width: 650px;
-  margin: 30px;
+  margin: 30px 0;
   padding: 15px;
+  border-radius: 0.8rem;
+  border: 3px solid #8eb4da49;
 }
 
 .current-description {
@@ -111,11 +114,7 @@ p.current-temp-range {
 
 .main-display {
   margin: 20px;
-}
-
-img.upcoming-forecast {
-  max-block-size: 30%;
-  margin: 0 auto;
+  margin-top: 0;
 }
 
 p.current {
@@ -133,17 +132,12 @@ p.current {
   top: -26px;
 }
 
-.upcoming-forecast {
-  padding: 0;
-  max-height: fit-content;
-}
-
 .low-temp {
   color: rgba(0, 0, 0, 0.6);
 }
 
 .find-current-location {
-  color: black;
+  color: #70757a;
   font-size: 14px;
 }
 
