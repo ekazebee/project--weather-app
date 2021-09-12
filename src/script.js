@@ -15,7 +15,7 @@ function formatDate(date) {
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
-  let now = `${day} ${hours}:${minutes}`;
+  let now = `last updated ${day} ${hours}:${minutes}`;
   return now;
   // get forecast for next 5 days; use getDay + next ones??
 }
@@ -68,6 +68,33 @@ function showRealWeather(response) {
   apiKey = "0ec90f7c009a99f423602e64344f4416";
   apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=${units}`;
   //axios.get(`${apiUrl}&appid=${apiKey}`).then(showRealForecast);
+}
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
+
+  let forecastHTML = `<div class="row">`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="col">
+      <div class="weather-forecast-date">${day}</div>
+      <img
+        src="http://openweathermap.org/img/wn/50d@2x.png"
+        alt=""
+        width="42"
+      />
+      <div class="weather-forecast-temperatures">
+        <span class="weather-forecast-temperature-max">73</span> /
+        <span class="weather-forecast-temperature-min">57</span>
+      </div>
+    </div>`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+
+  forecastElement.innerHTML = forecastHTML;
 }
 
 function convertToCelsius(event) {
@@ -128,3 +155,5 @@ function findCurrentLocation(event) {
 
 let currentLocationLink = document.querySelector("#find-current-location");
 currentLocationLink.addEventListener("click", findCurrentLocation);
+
+displayForecast();

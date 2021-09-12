@@ -27,7 +27,7 @@ h2 {
   color: #202124;
 }
 h4 {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 19px;
   color: #70757a;
 }
@@ -75,9 +75,6 @@ p.current-temp-range {
 
 .current-low-temp {
   font-weight: 400;
-}
-
-.weather-app-wrapper {
 }
 
 .card {
