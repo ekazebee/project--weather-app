@@ -150,6 +150,10 @@ p.current {
   font-size: 14px;
 }
 
+.forecast-icons {
+  width: 60%;
+}
+
 .github-link {
   text-transform: none;
   text-align: left;
