@@ -17,7 +17,6 @@ function formatDate(date) {
   }
   let now = `last updated ${day} ${hours}:${minutes}`;
   return now;
-  // get forecast for next 5 days; use getDay + next ones??
 }
 
 let showCurrentTime = document.querySelector("#current-time");
@@ -113,7 +112,6 @@ function showRealWeather(response) {
   apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=${units}`;
 
   getForecast(response.data.coord);
-  //axios.get(`${apiUrl}&appid=${apiKey}`).then(getForecast);
 }
 
 function convertToCelsius(event) {
@@ -133,13 +131,7 @@ function convertToFahrenheit(event) {
   temperatureElement.innerHTML = fahrenheitTemperature;
 }
 
-function search(event) {
-  event.preventDefault();
-  let citySearchInput = document.querySelector("#city-search-input");
-  let currentCity = document.querySelector("#current-city");
-  currentCity.innerHTML = citySearchInput.value;
-  let city = citySearchInput.value;
-
+function search(city) {
   let apiKey = "0ec90f7c009a99f423602e64344f4416";
   let units = "imperial";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${units}`;
@@ -147,8 +139,17 @@ function search(event) {
   axios.get(`${apiUrl}&appid=${apiKey}`).then(showRealWeather);
 }
 
+function handleSubmit(event) {
+  event.preventDefault();
+  let citySearchInput = document.querySelector("#city-search-input");
+  let currentCity = document.querySelector("#current-city");
+  currentCity.innerHTML = citySearchInput.value;
+  let city = citySearchInput.value;
+  search(city);
+}
+
 let citySearchForm = document.querySelector("#city-search-form");
-citySearchForm.addEventListener("submit", search);
+citySearchForm.addEventListener("submit", handleSubmit);
 
 let fahrenheitTemperature = 72;
 
@@ -174,3 +175,5 @@ function findCurrentLocation(event) {
 
 let currentLocationLink = document.querySelector("#find-current-location");
 currentLocationLink.addEventListener("click", findCurrentLocation);
+
+search("Seattle");
