@@ -72,9 +72,11 @@ function getForecast(coordinates) {
 
 function showRealWeather(response) {
   console.log(response);
+
   let currentCity = document.querySelector("#current-city");
   city = response.data.name;
-  currentCity.innerHTML = city;
+  let country = response.data.sys.country;
+  currentCity.innerHTML = `${city}, ${country}`;
 
   fahrenheitTemperature = Math.round(response.data.main.temp);
   let realWind = response.data.wind.speed;
