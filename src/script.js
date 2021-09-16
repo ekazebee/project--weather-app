@@ -71,12 +71,10 @@ function getForecast(coordinates) {
 }
 
 function showRealWeather(response) {
-  console.log(response);
-
   let currentCity = document.querySelector("#current-city");
   city = response.data.name;
   let country = response.data.sys.country;
-  currentCity.innerHTML = `${city}, ${country}`;
+  currentCity.innerHTML = `${city}, <small> ${country} </small>`;
 
   fahrenheitTemperature = Math.round(response.data.main.temp);
   let realWind = response.data.wind.speed;
@@ -108,7 +106,6 @@ function showRealWeather(response) {
 
   apiKey = "0ec90f7c009a99f423602e64344f4416";
   apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=imperial`;
-
   getForecast(response.data.coord);
 }
 

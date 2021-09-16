@@ -1,5 +1,6 @@
 body {
   font-family: Poppins;
+  background-color: #8eb4da0a;
 }
 
 a {
@@ -22,7 +23,7 @@ h1 {
 }
 
 h2 {
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 22px;
   color: #202124;
 }
@@ -61,6 +62,10 @@ hr.forecast-divider {
   margin: 15px;
 }
 
+p.current {
+  color: rgba(0, 0, 0, 0.6);
+}
+
 p.current-temp-range {
   text-align: left;
   margin-left: 2px;
@@ -69,20 +74,23 @@ p.current-temp-range {
   color: #7a9dc0;
 }
 
+.card {
+  padding: 15px;
+  border-radius: 20px;
+  border: 3px solid #8eb4da49;
+  box-shadow: 0px 30px 50px #8eb4da10;
+}
+
+.city-search-input {
+  background-color: #8eb4da2f;
+}
+
 .current-high-temp-H {
   font-weight: 600;
 }
 
 .current-low-temp {
   font-weight: 400;
-}
-
-.card {
-  max-width: 650px;
-  margin: 30px 0;
-  padding: 15px;
-  border-radius: 0.8rem;
-  border: 3px solid #8eb4da49;
 }
 
 .current-description {
@@ -97,52 +105,13 @@ p.current-temp-range {
 }
 
 .current-icon {
-  margin-top: 60px;
+  margin-top: 65px;
   padding: 0;
-  margin-left: 20px;
 }
 
 .current-specs {
-  position: relative;
-  top: 40px;
   padding: 0;
-  margin-top: 40px;
-}
-
-.humidity {
-  color: #7a9dc0;
-}
-
-.wind-speed {
-  color: #7a9dc0;
-}
-
-.search-btn {
-  display: inline-block;
-}
-
-.main-display {
-  margin: 20px;
-  margin-top: 0;
-}
-
-p.current {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.search-submit {
-  max-width: 100px;
-  text-align: center;
-}
-
-.temp-units {
-  font-size: 16px;
-  position: relative;
-  top: -32px;
-}
-
-.low-temp {
-  color: rgba(0, 0, 0, 0.6);
+  margin-top: 90px;
 }
 
 .find-current-location {
@@ -157,7 +126,32 @@ p.current {
 .github-link {
   text-transform: none;
   text-align: left;
-  margin-top: 10px;
+  margin-top: 20px;
+}
+
+.humidity,
+.wind-speed {
+  color: #7a9dc0;
+}
+
+.low-temp {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.main-display {
+  margin: 0px 0px 20px 20px;
+}
+
+.search-submit {
+  max-width: 100px;
+  text-align: center;
+  color: #70757a;
+}
+
+.temp-units {
+  font-size: 16px;
+  position: relative;
+  top: -32px;
 }
 
 .temp-units {
@@ -165,8 +159,14 @@ p.current {
   color: #202124;
 }
 
+.weather-app-wrapper {
+  max-width: 650px;
+  margin-top: 60px;
+}
+
 .weather-forecast {
   text-align: center;
+  margin-bottom: 16px;
 }
 
 .weather-forecast-date {
