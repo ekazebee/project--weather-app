@@ -19,9 +19,11 @@ function formatDate(date) {
   return now;
 }
 
-let showCurrentTime = document.querySelector("#current-time");
-let currentDate = new Date();
-showCurrentTime.innerHTML = formatDate(currentDate);
+function getDate() {
+  let showCurrentTime = document.querySelector("#current-time");
+  let currentDate = new Date();
+  showCurrentTime.innerHTML = formatDate(currentDate);
+}
 
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
@@ -147,3 +149,4 @@ let currentLocationLink = document.querySelector("#find-current-location");
 currentLocationLink.addEventListener("click", findCurrentLocation);
 
 search("Seattle");
+getDate();
