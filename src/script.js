@@ -38,7 +38,7 @@ function displayForecast(response) {
 
   let forecastHTML = `<div class="row">`;
   forecast.forEach(function (forecastDay, index) {
-    if ((index > 0) & (index < 6)) {
+    if (index < 6) {
       forecastHTML =
         forecastHTML +
         `<div class="col">
@@ -91,10 +91,6 @@ function showRealWeather(response) {
   temperatureElement.innerHTML = `${fahrenheitTemperature}`;
   let windElement = document.querySelector("#wind-speed");
   windElement.innerHTML = `${realWind} mph`;
-  let highTempElement = document.querySelector("#current-high-temp");
-  highTempElement.innerHTML = realHighTemp;
-  let lowTempElement = document.querySelector("#current-low-temp");
-  lowTempElement.innerHTML = realLowTemp;
   let weatherDescriptionElement = document.querySelector(
     "#weather-description"
   );
