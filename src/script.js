@@ -73,6 +73,7 @@ function getForecast(coordinates) {
 }
 
 function showRealWeather(response) {
+  getDate();
   let currentCity = document.querySelector("#current-city");
   city = response.data.name;
   let country = response.data.sys.country;

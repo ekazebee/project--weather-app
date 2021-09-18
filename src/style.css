@@ -13,10 +13,10 @@ a.github-link {
 }
 
 h1 {
-  text-align: left;
-  font-size: 60px;
+  text-align: right;
+  font-size: 80px;
   font-weight: normal;
-  margin-top: 20px;
+  margin-top: 0px;
   margin-bottom: 0;
   color: #8eb4da;
   color: #202124;
@@ -69,9 +69,8 @@ p.current {
 p.current-temp-range {
   text-align: left;
   margin-left: 2px;
-  margin-top: 10px;
+  margin-top: 16px;
   font-size: 16px;
-  color: #7a9dc0;
 }
 
 .card {
@@ -79,6 +78,10 @@ p.current-temp-range {
   border-radius: 20px;
   border: 3px solid #8eb4da49;
   box-shadow: 0px 30px 50px #8eb4da10;
+}
+
+.city-and-time {
+  margin-left: 10px;
 }
 
 .city-search-input {
@@ -97,21 +100,14 @@ p.current-temp-range {
   padding: 0;
 }
 
-.current-temp {
-  margin-left: 30px;
-  padding-left: 20px;
-  margin-top: 20px;
-  border-left: 3px solid #8eb4da49;
-}
-
 .current-icon {
-  margin-top: 65px;
+  margin-top: 0px;
   padding: 0;
 }
 
 .current-specs {
   padding: 0;
-  margin-top: 90px;
+  margin-top: 0px;
 }
 
 .find-current-location {
@@ -140,6 +136,7 @@ p.current-temp-range {
 
 .main-display {
   margin: 0px 0px 20px 20px;
+  margin: auto;
 }
 
 .search-submit {

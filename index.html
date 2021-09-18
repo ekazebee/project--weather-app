@@ -68,34 +68,31 @@
             </div>
           </div>
 
+          <div class="row city-and-time">
+            <h2 id="current-city">
+              Dana Point, <small id="country">US</small>
+            </h2>
+            <h4 id="current-time">Tuesday 9:56</h4>
+          </div>
+
           <div class="row main-display">
-            <div class="col-6 current-description">
-              <h2 id="current-city">
-                Dana Point, <small id="country">US</small>
-              </h2>
-              <h4 id="current-time">Tuesday 9:56</h4>
-
-              <div class="col current-temp">
-                <div class="clearfix">
-                  <h1>
-                    <span id="current-temp-display" class="float-left">72</span>
-
-                    <span class="temp-units">°F</span>
-                  </h1>
-                </div>
-                <div>
-                  <p class="current-temp-range">
-                    <span class="current-high-temp-H"
-                      >H : <span id="current-high-temp">75</span></span
-                    >
-                    / L :
-                    <span id="current-low-temp">59</span>
-                  </p>
-                </div>
+            <div class="col-auto current-description">
+              <h1>
+                <span id="current-temp-display">72</span>
+                <span class="temp-units">°F</span>
+              </h1>
+              <div>
+                <p class="current-temp-range">
+                  <span class="current-high-temp-H"
+                    >H : <span id="current-high-temp">75</span></span
+                  >
+                  | L :
+                  <span id="current-low-temp">59</span>
+                </p>
               </div>
             </div>
 
-            <div class="col current-icon">
+            <div class="col-auto current-icon">
               <img
                 id="icon"
                 src="http://openweathermap.org/img/wn/02d@2x.png"
