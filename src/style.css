@@ -8,10 +8,6 @@ a {
   text-decoration: none;
 }
 
-a.github-link {
-  color: #7a9dc0;
-}
-
 h1 {
   text-align: right;
   font-size: 80px;
@@ -133,8 +129,11 @@ p.current-temp-range {
 
 .github-link {
   text-transform: none;
-  text-align: left;
   margin-top: 20px;
+}
+
+a.github-link {
+  color: #7a9dc0;
 }
 
 .humidity,
@@ -170,7 +169,7 @@ p.current-temp-range {
 
 .weather-app-wrapper {
   max-width: 650px;
-  margin-top: 60px;
+  margin: 60px auto;
 }
 
 .weather-forecast {
