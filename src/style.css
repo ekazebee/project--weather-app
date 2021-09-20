@@ -20,6 +20,8 @@ h1 {
   margin-bottom: 0;
   color: #8eb4da;
   color: #202124;
+  position: relative;
+  left: 15px;
 }
 
 h2 {
@@ -82,8 +84,12 @@ p.current-temp-range {
   box-shadow: 0px 30px 50px #8eb4da10;
 }
 
+.card-body {
+  padding: 10px;
+}
+
 .city-and-time {
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 .city-search-input {
@@ -154,10 +160,11 @@ p.current-temp-range {
   font-size: 16px;
   position: relative;
   top: -45px;
+  left: -15px;
 }
 
 .temp-units {
-  font-weight: bolder;
+  font-weight: 600;
   color: #202124;
 }
 
